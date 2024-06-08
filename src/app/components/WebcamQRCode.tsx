@@ -185,7 +185,7 @@ const WebcamQRCode = () => {
                 <>
                   {" "}
                   <div className="qrPictureContainer">
-                    <img src={imageSrc} alt="Captured" className="picture" />
+                    <img src={imageSrc || ''} alt="Captured" className="picture" />
                     {qrValue && (
                       <>
                         <QRCode value={qrValue} size={456} />{" "}
